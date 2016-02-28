@@ -66,3 +66,6 @@ npm test
 2. Create a feature branch 
 3. Add test cases if necessary 
 3. Push your changes and create a PR 
+
+## License 
+MIT 
