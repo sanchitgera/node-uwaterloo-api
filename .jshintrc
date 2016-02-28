@@ -1,0 +1,17 @@
+{
+  "bitwise": true,
+  "curly": true,
+  "eqeqeq": true,
+  "esnext": true,
+  "latedef": true,
+  "noarg": true,
+  "strict": true,
+  "undef": true,
+  "unused": true,
+  "globals": {
+    "console": false,
+    "it" : true,
+    "describe" : true
+  },
+  "node" : true
+}

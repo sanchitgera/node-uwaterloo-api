@@ -7,5 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Sanchit Gera (gerasanchit@gmail.com)",
-  "license": "MIT "
+  "license": "MIT ",
+  "devDependencies": {
+    "mocha": "^2.4.5",
+    "should": "^8.2.2"
+  },
+  "dependencies": {
+    "request": "^2.69.0",
+    "url": "^0.11.0"
+  }
 }
