@@ -1,6 +1,6 @@
 {
   "name": "uwaterloo-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A wrapper around the uWaterloo Open Data API ",
   "main": "lib/client",
   "scripts": {
