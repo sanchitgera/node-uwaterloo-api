@@ -1,0 +1,11 @@
+{
+  "name": "uwaterloo-api",
+  "version": "1.0.0",
+  "description": "A wrapper around the uWaterloo Open Data API ",
+  "main": "lib/client",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sanchit Gera (gerasanchit@gmail.com)",
+  "license": "MIT "
+}
