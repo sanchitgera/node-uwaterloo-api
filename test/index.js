@@ -24,21 +24,31 @@ describe('Initializing API Client', function() {
   });
 });
 
-describe('Queries without embedded params', function(done) {
+describe('Queries', function() {
   it('GETS foodservices/menu endpoint successfully', function(done) {
     client.get('/foodservices/menu', function(err, res) {
-      res.status.should.eql(200);
-      res.body.should.have.property('meta');
-      res.body.should.have.property('data');
+      should.equal(err, null);
+      res.should.have.property('meta');
+      res.meta.status.should.eql(200);
+      res.should.have.property('data');
       done();
     });
   });
 
   it('GETS feds/event endpoint', function(done) {
     client.get('/feds/events', function(err, res) {
-      res.status.should.eql(200);
-      res.body.should.have.property('meta');
-      res.body.should.have.property('data');
+      should.equal(err, null);
+      res.should.have.property('meta');
+      res.meta.status.should.eql(200);
+      res.should.have.property('data');
+      done();
+    });
+  });
+
+  it('Return an error for invalid requests', function(done) {
+    client.get('/this/url/does/not/exist', function(err, res) {
+      err.should.not.be.null;
+      res.should.be.null;
       done();
     });
   });
